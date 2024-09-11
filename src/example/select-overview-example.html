@@ -1,0 +1,24 @@
+<h4>Basic mat-select</h4>
+<mat-form-field>
+  <mat-label>Favorite food</mat-label>
+  <mat-select>
+    @for (food of foods; track food) {
+    <mat-option [value]="food.value">{{food.viewValue}}</mat-option>
+    }
+  </mat-select>
+</mat-form-field>
+
+<h4>Basic native select with multiple values</h4>
+<mat-form-field>
+  <mat-label>Aircrafts</mat-label>
+  <mat-select matNativeControl multiple>
+    <mat-option value="CS-WFP">CS-WFP</mat-option>
+    <mat-option value="EC-NOI">EC-NOI</mat-option>
+    <mat-option value="EC-NTB">EC-NTB</mat-option>
+    <mat-option value="EC-OHV">EC-OHV</mat-option>
+  </mat-select>
+</mat-form-field>
+
+<!-- Copyright 2024 Google LLC. All Rights Reserved.
+    Use of this source code is governed by an MIT-style license that
+    can be found in the LICENSE file at https://angular.io/license -->
